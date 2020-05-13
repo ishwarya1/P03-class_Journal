@@ -17,8 +17,8 @@ public class Grade {
         return week;
     }
 
-    public Grade(String dgGrade, String moduleCode, int week) {
-        this.Grade = dgGrade;
+    public Grade(String Grade, String moduleCode, int week) {
+        this.Grade = Grade;
         this.moduleCode = moduleCode;
         this.week = week;
     }

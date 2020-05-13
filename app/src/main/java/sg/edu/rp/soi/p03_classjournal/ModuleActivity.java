@@ -25,8 +25,8 @@ public class ModuleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.module);
-        Intent oi = getIntent();
-        module = oi.getStringExtra("module");
+        Bundle oi = getIntent().getExtras();
+        module = oi.getString("module");
         setTitle("Info for "+ module);
         lvgrades = findViewById(R.id.lvGrade);
         btnadd = findViewById(R.id.btnadd);
